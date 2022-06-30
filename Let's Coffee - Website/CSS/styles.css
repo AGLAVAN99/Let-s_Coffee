@@ -1,0 +1,160 @@
+.site {
+  background-color: #F1CE93;
+  margin: 0;
+}
+
+.title-box {
+  background-image: url(../Images/Title-Image.jpg);
+  background-position: center;
+  background-size: 50, 20, 50, 20;
+  margin: 0;
+  padding: 100px;
+  border: 0;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 100px;
+  color: #F7E2BE;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.motto {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 70px;
+  color: #F7E2BE;
+  margin: 10 0 0 0;
+  padding: 0;
+  border: 0;
+}
+
+#menu-bar {
+  margin: 0;
+  text-align: center;
+}
+
+nav.navbar.navbar-expand-lg.navbar-fixed-top.navbar-light {
+  display: flex !important;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  font-size: 38px;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  padding: 15px;
+}
+
+h3 {
+  font-family: 'EB Garamond', serif;
+  color: #AB5847;
+  margin: 5 0 0 0;
+  padding: 0;
+  border: 0;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 10px;
+  padding: 50px;
+  border: 25px;
+  border-radius: 25px;
+  background-color: #F6CF72;
+}
+
+.forms {
+  background-image: url(../Images/form-image.jpg);
+  background-position: center;
+  background-size: 50, 20, 50, 20;
+  margin: 0;
+  padding: 100px;
+  border: 0;
+}
+
+.marketing-tab {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.concept {
+  border-radius: 25px;
+  margin: 40px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  background-color: #FCE8C0;
+}
+
+.offers {
+  border-radius: 25px;
+  margin: 35px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  background-color: #FCE8C0;
+}
+
+.why-us {
+  border-radius: 25px;
+  margin: 35px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  background-color: #FCE8C0;
+}
+
+.concept img,
+.offers img,
+.why-us img {
+  background-color: #FCE8C0;
+  border-radius: 100%;
+  margin-top: -50px;
+  padding: 10px;
+  box-shadow: rgba(241, 206, 147, 1) 0px 3px 8px;
+}
+
+h3.bubbles {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  color: #825813;
+  margin: auto;
+  padding: 30px 60px 40px 60px;
+  border: 20px;
+  font-size: 23px;
+}
+
+.menu-delivery {
+  display: flex !important;
+  justify-content: center;
+}
+
+.columns {
+  flex: 20%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+  background-color: #FCE8C0;
+  border-radius: 15px;
+}
+
+#note,
+#prices {
+  flex: 10%
+}
+
+#location {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+  background-color: #FCE8C0;
+}
+
+.contacts img {
+  margin: 20px 15px 10px auto;
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Let's coffee! Would you like to grab a coffee online with someone new? We deliver, you enjoy!">
+  <meta name="keywords" content="cofee,pub,place,delivery">
+  <meta name="author" content="Andreea Glavan">
+  <title>☕Let's coffee☕</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&display=swap');
+  </style>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<body class="site">
+  <section id="title-page">
+    <div class="title-box">
+      <div class="title-box-overlay">
+        <h1 class="title">Let's coffee</h1>
+        <h2 class="motto">Would you like to grab a coffee, but also meet someone new? We also deliver it to your house, while you get the chance to have the company of a new person!</h2>
+      </div>
+    </div>
+  </section>
+  <section id="menu-bar">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#strangers-form">Let's coffee with a stranger</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gamers-form">Let's coffee with a gamer</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bookers-form">Let's coffee with a booker</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu and delivery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#location">Locations</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="marketing-tab">
+        <div class="concept">
+          <img src="Images\Concept-icon.png" width="130" height="auto">
+          <h3 class="bubbles">Concept</h3>
+          <p>The idea brings together the online and offline part of having a coffee with either a friend or a new person. We know how hard socializing is, so we do the hard work for you.</p>
+        </div>
+        <div class="offers">
+          <img src="Images\Offers-icon.png" width="130" height="auto">
+          <h3 class="bubbles">What do we do?</h3>
+          <p>We match you with a random person that shares the same passions as you do and then we deliver it to your home and as a bonus, we organize an online meeting. If you are more of an on-site person, don't worry, we have multiple thematic
+            locations that you will surely enjoy.</p>
+        </div>
+        <div class="why-us">
+          <img src="Images\Why-us-icon.png" width="130" height="auto">
+          <h3 class="bubbles">Why us?</h3>
+          <p>Driven by a young team, we bring the socializing concept to a next level and provide high quality coffee-based products. If you are not convinced, you can stop by and have a cup!</p>
+        </div>
+      </div>
+    </section>
+    <section class="forms">
+      <div class="all-forms">
+        <form action="php/strangers.php" method="post" class="strangers">
+          <div class="strangers-menu" id="strangers-form">
+            <h3>Are you too curious to meet someone new while enjoying your coffee?</h3>
+            <h3>Please fill in the below form:</h3> <br>
+            <h3>Full Name:</h3> <input type="text" name="name"> <br>
+            <h3>E-mail:</h3> <input type="text" name="email"> <br>
+            <br>
+            <h3>Leisure Activities in your free time: </h3>
+            <input type="checkbox" name="hobbies[]" value="travelling"> <label for="travelling">
+              <h3>Travelling</h3>
+            </label><br>
+            <input type="checkbox" name="hobbies[]" value="arts"> <label for="arts">
+              <h3>Arts</h3>
+            </label><br>
+            <input type="checkbox" name="hobbies[]" value="music"> <label for="music">
+              <h3>Music</h3>
+            </label><br>
+            <input type="checkbox" name="hobbies[]" value="reading"> <label for="reading">
+              <h3>Reading</h3>
+            </label><br>
+            <input type="checkbox" name="hobbies[]" value="writing"> <label for="writing">
+              <h3>Writing</h3>
+            </label><br>
+            <br>
+            <h3>Personality:</h3>
+            <input type="radio" name="personality[]" value="introvert" required> <label for="introvert">
+              <h3>Introvert</h3>
+            </label>
+            <input type="radio" name="personality[]" value="extrovert" required> <label for="extrovert">
+              <h3>Extrovert</h3>
+            </label><br>
+            <br>
+            <h3>You consider yourself:</h3>
+            <input type="checkbox" name="qualities[]" value="fun"> <label for="fun">
+              <h3>Fun</h3>
+            </label><br>
+            <input type="checkbox" name="qualities[]" value="understanding"> <label for="understanding">
+              <h3>Understanding</h3>
+            </label><br>
+            <input type="checkbox" name="qualities[]" value="shy"> <label for="shy">
+              <h3>Shy</h3>
+            </label><br>
+            <input type="checkbox" name="qualities[]" value="sociable"> <label for="sociable">
+              <h3>Sociable</h3>
+            </label><br>
+            <input type="checkbox" name="qualities[]" value="new_people"> <label for="new_people">
+              <h3>Interested in meeting new people</h3>
+            </label><br>
+            <br>
+            <h3>What do you expect from the person you are about to meet:</h3>
+            <input type="checkbox" name="qualities_stranger1[]" value="be_fun"> <label for="be_fun">
+              <h3>To be fun</h3>
+            </label><br>
+            <input type="checkbox" name="qualities_stranger1[]" value="be_understanding"> <label for="be_understanding">
+              <h3>To be understanding</h3>
+            </label><br>
+            <input type="checkbox" name="qualities_stranger1[]" value="be_sociable"> <label for="be_sociable">
+              <h3>To be sociable</h3>
+            </label><br>
+            <input type="checkbox" name="qualities_stranger1[]" value="boundaries"> <label for="boundaries">
+              <h3>To respect my boundaries</h3>
+            </label><br>
+            <input type="submit"><br>
+            <br>
+          </div>
+        </form>
+        <br>
+        <form action="gamers.php" method="post" class="gamers">
+          <div class="gamers-menu" id="gamers-form">
+            <h3>Would you want to have fun with a gamer while enjoying your coffee?</h3>
+            <h3>Please fill in the below form:</h3><br>
+            <h3>Full Name:</h3> <input type="text" name="name"><br>
+            <h3>E-mail:</h3> <input type="text" name="email"><br>
+            <br>
+            <h3>Online or Offline:</h3>
+            <input type="radio" name="onoff[]" id="online"> <label for="online">
+              <h3>Online</h3>
+            </label>
+            <input type="radio" name="onoff[]" id="offline"> <label for="offline">
+              <h3>Offline</h3>
+            </label><br>
+            <br>
+            <h3>Favourite video game genre:</h3>
+            <input type="checkbox" name="game_genre[]" id="shooter"> <label for="shooter">
+              <h3>Shooter</h3>
+            </label><br>
+            <input type="checkbox" name="game_genre[]" id="multiplayer"> <label for="genre">
+              <h3>Multiplayer</h3>
+            </label><br>
+            <input type="checkbox" name="game_genre[]" id="fantasy"> <label for="genre">
+              <h3>Fantasy</h3>
+            </label><br>
+            <input type="checkbox" name="game_genre[]" id="rtm"> <label for="genre">
+              <h3>Real-time Strategy</h3>
+            </label><br>
+            <input type="checkbox" name="game_genre[]" id="mmorp"> <label for="genre">
+              <h3>Massively Multiplayer Online Role-Playing</h3>
+            </label><br>
+            <input type="checkbox" name="game_genre[]" id="survival"> <label for="survival">
+              <h3>Survival</h3>
+            </label><br>
+            <input type="checkbox" name="game_genre[]" id="horror"> <label for="horror">
+              <h3>Horror</h3>
+            </label><br>
+            <br>
+            <h3>Favourite Board Games:</h3>
+            <input type="checkbox" name="board_game[]" id="cards"> <label for="cards">
+              <h3>Cards</h3>
+            </label><br>
+            <input type="checkbox" name="board_game[]" id="activity"> <label for="activity">
+              <h3>Activity</h3>
+            </label><br>
+            <input type="checkbox" name="board_game[]" id="dixit"> <label for="dixit">
+              <h3>Dixit</h3>
+            </label><br>
+            <input type="checkbox" name="board_game[]" id="chess"> <label for="chess">
+              <h3>Chess</h3>
+            </label><br>
+            <input type="checkbox" name="board_game[]" id="monopoly"> <label for="monopoly">
+              <h3>Monopoly</h3>
+            </label><br>
+            <br>
+            <h3>What do you expect from the person you are about to meet:</h3>
+            <input type="checkbox" name="qualities_stranger2[]" id="fun"> <label for="fun">
+              <h3>To be fun</h3>
+            </label><br>
+            <input type="checkbox" name="qualities_stranger2[]" id="understanding"> <label for="understanding">
+              <h3>To be understanding</h3>
+            </label><br>
+            <input type="checkbox" name="qualities_stranger2[]" id="sociable"> <label for="sociable">
+              <h3>To be sociable</h3>
+            </label><br>
+            <input type="checkbox" name="qualities_stranger2[]" id="boundaries"> <label for="boundaries">
+              <h3>To respect my boundaries</h3>
+            </label><br>
+            <input type="submit"><br>
+          </div>
+        </form>
+        <br>
+        <form action="bookers.php" method="post">
+          <div class="bookers-menu" id="bookers-form">
+            <h3>Would you like to share your favourite book while enjoying your coffee?</h3>
+            <h3>Please fill in the below form:</h3><br>
+            <h3>Full Name:</h3> <input type="text" name="name"><br>
+            <h3>E-mail:</h3> <input type="text" name="email"><br>
+            <h3>Region of favourite author:</h3>
+            <input type="checkbox" name="authors[]" id="ce"> <label for="ce">
+              <h3>Central Europe</h3>
+            </label><br>
+            <input type="checkbox" name="authors[]" id="uk"> <label for="uk">
+              <h3>United Kingdom</h3>
+            </label><br>
+            <input type="checkbox" name="authors[]" id="usa"> <label for="usa">
+              <h3>United States of America</h3>
+            </label><br>
+            <input type="checkbox" name="authors[]" id="romania"> <label for="romania">
+              <h3>Romania</h3>
+            </label><br>
+            <input type="checkbox" name="authors[]" id="nordic_countries"> <label for="nordic_countries">
+              <h3>Nordic Countries</h3>
+            </label><br>
+            <input type="checkbox" name="authors[]" id="asia"> <label for="asia">
+              <h3>Asia</h3>
+            </label><br>
+            <br>
+            <h3>Favourite Book Genre:</h3>
+            <input type="checkbox" name="book_genre[]" id="action"> <label for="action">
+              <h3>Action</h3>
+            </label><br>
+            <input type="checkbox" name="book_genre[]" id="drama"> <label for="drama">
+              <h3>Drama</h3>
+            </label><br>
+            <input type="checkbox" name="book_genre[]" id="love"> <label for="love">
+              <h3>Love</h3>
+            </label><br>
+            <input type="checkbox" name="book_genre[]" id="comedy"> <label for="comedy">
+              <h3>Comedy</h3>
+            </label><br>
+            <input type="checkbox" name="book_genre[]" id="mystery"> <label for="mystery">
+              <h3>Mystery</h3>
+            </label><br>
+            <input type="checkbox" name="book_genre[]" id="sf"> <label for="sf">
+              <h3>Science Fiction</h3>
+            </label><br>
+            <br>
+            <h3>What do you expect from the person you are about to meet:</h3>
+            <input type="checkbox" name="qualities_stranger3[]" id="fun"> <label for="fun">
+              <h3>To be fun</h3>
+            </label><br>
+            <input type="checkbox" name="qualities_stranger3[]" id="understanding"> <label for="understanding">
+              <h3>To be understanding</h3>
+            </label><br>
+            <input type="checkbox" name="qualities_stranger3[]" id="sociabile"> <label for="sociable">
+              <h3>To be sociable</h3>
+            </label><br>
+            <input type="checkbox" name="qualities_stranger3[]" id="boundaries"> <label for="boundaries">
+              <h3>To respect my boundaries</h3>
+            </label><br>
+            <input type="submit"><br>
+          </div>
+        </form>
+        <br>
+      </div>
+    </section>
+    <section>
+      <div class="menu-delivery" id="menu">
+        <div class="columns">
+          <h3 class="bubbles">Hot and Cold Products</h3>
+          <h3>Plain Black Coffee</h3>
+          <h3>Espresso Short/Long</h3>
+          <h3>Cafè Latte</h3>
+          <h3>Cappuccino</h3>
+          <h3>Viennese Cappuccino</h3>
+          <h3>Latte Macchiato</h3>
+          <h3>Caramel Macchiato</h3>
+          <h3>Frappucino</h3>
+          <h3>Flavoured Frappucino(Caramel, Vanilla, Chocolate, Pistachio)</h3>
+          <h3>Vannilla/Cocoa Ice Cream Frappucino</h3>
+          <h3>Cookie Frappucino</h3>
+        </div>
+        <div class="columns" id="prices">
+          <h3 class="bubbles">Prices</h3>
+          <h3>5 RON</h3>
+          <h3>7 RON/ 9 RON</h3>
+          <h3>10 RON</h3>
+          <h3>12 RON</h3>
+          <h3>13 RON</h3>
+          <h3>12 RON</h3>
+          <h3>12 RON</h3>
+          <h3>12 RON</h3>
+          <h3>15 RON</h3>
+          <h3>17 RON</h3>
+          <h3>20 RON</h3>
+        </div>
+        <div class="columns" id="note">
+          <h3 class="bubbles">Please note that delivery will be performed by our Partners: Glovo, Takeaway, Bolt Food and will be charged an additional 4 RON tax.</h3>
+          <h3 class="bubbles">We appreciate your understanding and thank you for choosing our products!</h3>
+        </div>
+      </div>
+    </section>
+    <section class="locations">
+      <div id="location">
+        <h3 class="bubbles">Kindly know that up to now, the physical service is unavailable. We truly apologise for the inconvenience created and we will keep you updated! Stay tuned for more coffee related news!</h3>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="contacts">
+        <img src="Images\Facebook.png" width="30" height="auto">
+        <img src="Images\Whatsapp.png" width="30" height="auto">
+        <img src="Images\Instagram.png" width="30" height="auto">
+        <img src="Images\Telegram.png" width="30" height="auto">
+      </div>
+      <br>
+      <a href="php/match-strangers.php">Continue Strangers</a>
+      <a href="php/match-gamers.php">Continue Gamers</a>
+      <a href="php/match-bookers.php">Continue Bookers</a>
+      <br>
+      <h6>© Copyright to Andreea Glavan, June 2022</h6>
+    </footer>
+</body>
+
+</html>
